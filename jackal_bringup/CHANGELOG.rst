@@ -2,6 +2,11 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Updated microstrain parameter file
+* Contributors: Luis Camero
+
 0.7.10 (2024-03-15)
 -------------------
 * Removed typo
