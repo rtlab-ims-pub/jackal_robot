@@ -2,8 +2,8 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.7.11 (2024-05-24)
+-------------------
 * Updated microstrain parameter file
 * Contributors: Luis Camero
 
