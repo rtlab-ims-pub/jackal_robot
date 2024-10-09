@@ -13,9 +13,9 @@
 
 # port is the main port that the device will communicate over. For all devices except the GQ7, this is the only available port.
 # aux_port is only available for the GQ7 and is only needed when streaming RTCM corrections to the device from ROS, or if you want to publish NMEA sentences from this node
-port         : $(optenv JACKAL_IMU_MICROSTRAIN_PORT /dev/microstrain)
+port         : $(optenv JACKAL_IMU_MICROSTRAIN_PORT /dev/microstrain_main)
 baudrate     : 115200
-aux_port     : $(optenv JACKAL_IMU_MICROSTRAIN_PORT /dev/microstrain)
+aux_port     : $(optenv JACKAL_IMU_MICROSTRAIN_PORT /dev/microstrain_main)
 aux_baudrate : $(optenv JACKAL_IMU_MICROSTRAIN_BAUDRATE 115200)
 debug        : False
 
@@ -90,7 +90,7 @@ frame_id: $(optenv JACKAL_IMU_MICROSTRAIN_LINK microstrain_link)
 
 # Frame IDs determining the transforms published by this node to aid in navigation. See https://www.ros.org/reps/rep-0105.html
 # Note: If use_enu_frame is false, these frames (with the exception of earth_frame_id) will automatically have "_ned" appended to them.
-mount_frame_id     : "base_link"  # Frame ID that the device is mounted on.
+mount_frame_id     : "sensor_plate_link"  # Frame ID that the device is mounted on.
 map_frame_id       : "map"
 earth_frame_id     : "earth"
 gnss1_frame_id     : "gnss_1_antenna_link"
