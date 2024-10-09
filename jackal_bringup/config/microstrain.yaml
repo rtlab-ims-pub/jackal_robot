@@ -86,7 +86,7 @@ raw_file_directory : "/home/your_name"
 tf_mode : 0
 
 # Frame ID that most header.frame_id fields will be populated with.
-frame_id: $(optenv JACKAL_IMU_MICROSTRAIN_LINK microstrain_link)
+frame_id: $(optenv JACKAL_IMU_MICROSTRAIN_LINK microstrain_imu_link)
 
 # Frame IDs determining the transforms published by this node to aid in navigation. See https://www.ros.org/reps/rep-0105.html
 # Note: If use_enu_frame is false, these frames (with the exception of earth_frame_id) will automatically have "_ned" appended to them.
